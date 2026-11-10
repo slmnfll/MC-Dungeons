@@ -1,0 +1,5 @@
+prologue:
+  chronicler:
+    # Minecraft account name used as the mannequin's skin.
+    # Use /dungeons prologue skin <MinecraftName> to replace it.
+    skin-profile: "MHF_Villager"

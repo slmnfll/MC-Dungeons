@@ -1,0 +1,25 @@
+name: Dungeons
+version: '${version}'
+main: me.slmnfll.dungeons.Dungeons
+api-version: '26.1.2'
+load: POSTWORLD
+author: Stella
+description: Instanced adventure dungeons for MunchyMC.
+depend: [WorldEdit]
+
+commands:
+  dungeons:
+    description: Opens the Adventure Journal and manages dungeon instances.
+    usage: /dungeons <journal|prologue|affinity|start|leave|complete|status|profile|weapon|armor|armorset|artifact|rune|consumable|runesmith|socket|unsocket|repair|identify>
+    aliases: [dungeon]
+    permission: dungeons.use
+
+permissions:
+  dungeons.use:
+    description: Allows access to the Adventure Journal.
+    default: true
+  dungeons.admin:
+    description: Allows access to dungeon development commands.
+    default: op
+    children:
+      dungeons.use: true
